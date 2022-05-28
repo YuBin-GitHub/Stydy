@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>테이블 표 만들기</title>
+</head>
+
+<!-- table은 행과 열로 구성된 테이블 정의
+tr은 테이블의 각 행(가로)
+th는  각 열(세로)의 제목-
+td는 하나의 셀(한칸 속 단어)
+lowspan="숫자"는 아래로 세칸
+colspan="숫자"는 옆으로 세칸-->
+
+
+<br>    <table border="1">
+
+        <tr>
+            <th>가로제목 1번째</th>
+            <th>가로제목 2번째</th>
+        </tr>
+        <tr>
+            <td>1열 1번째</td>
+            <td>1열 2번째</td>
+        </tr>
+        <tr>
+            <td>2열 1번째</td>
+            <td>2열 2번째</td>
+        </tr>
+    </table>
+
+</br>--------------------------------------------------
+
+    <table border="1">
+        <tr>
+            <th colspan="3">가로제목 1번째</th>
+            <th rowspan="3">세로제목 1번째</th>
+        </tr>
+
+        <tr>
+            <td>1열 1번째</td>
+            <td rowspan="2">1,2열 2번째</td>
+            <td>1열 3번째</td>
+        </tr>
+
+        <tr>
+            <td>2열 1번째</td>
+            <td>2열 5번째</td>
+        </tr>
+    </table>
+</body>
+</html>

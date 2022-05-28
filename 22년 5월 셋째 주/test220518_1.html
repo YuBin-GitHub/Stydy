@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>게시글 목록 만들기</title>
+    <style>
+    table {
+        width: 100%;
+        border-top: 1px solid lightgray;
+        border-collapse: collapse;
+    }
+    th, td {
+    border-bottom: 1px solid lightgray;
+    padding: 10px;
+    }
+    
+    
+    #list, #next, #posting {text-align: center;}
+    #SELECT, #list01, #list02, #list04 {text-align: right;}
+    #list, #next, #posting2 {text-align: right;}
+    #SELECT {font-weight : bold;
+            color : gray;}
+    #notBorderTop {
+        border-top: 0px solid #444444;
+        border-bottom: 4px solid white;
+    }
+    #SELECT {width: 30px;}
+    #list01 {width: 40px;}
+    #list02 {width: 100px;}
+    #list04 {width: 50px;}
+
+    #list {width: 400px; text-align: right;}
+    #next {width: 400px; text-align: right;}
+    #posting2 {width: 50px; text-align: right;}
+
+    #num, #user, #day, #click {width : 100px;}
+
+    .numbering {text-align: center;}
+    .username {text-align: center;}
+    .day2 {text-align: center;}
+    .clickn {text-align: center;}
+    .th22 {background-color: lightgray;
+         border-top: 3px solid darkgrey;}
+
+    #a, #b, #list03 { box-shadow: 1px 1px 2px 0.5px grey;}
+    #a  {background-color: lightgray;
+        border-color :lightgray;
+        color: white;
+        font-weight: bold;
+        border: solid 1px grey;
+        border-radius: 3px;}
+    #b, #list03 {background-color: rgb(53, 53, 53);
+        border-color :rgb(53, 53, 53)lightgray;
+        color: white;
+        font-weight: bold;
+        border: solid 1px grey;
+        border-radius: 3px;}
+
+    </style>
+</head>
+<br>
+    <h3>게시판</h3>
+   
+    <table border="0">
+        <tr>
+            <td>▷총 3개의 게시물이 있습니다.</td>
+            <td id="SELECT">SELECT</td>
+            <td id="list01">
+                <select>
+                    <option value="">제목</option>
+                    <option value="">내용</option>
+                    <option value="">작성자</option>
+                </select>
+            </td>
+            <td id="list02"><input type="text" name=""> </td>
+            <td id="list04"><button type="button" id="list03">검색</button></td>
+        </tr>
+    </table>
+
+    <table>
+        <tr class="th22">
+            <th id="num">번호</th>
+            <th id="title">제목</th>
+            <th id="user">글쓴이</th>
+            <th id="day">일시</th>
+            <th id="click">조회수</th>
+        </tr>
+        <tr>
+            <td class="numbering">1</td>
+            <td class="posting">게시글 1입니다.</td>
+            <td class="username">김준석</td>
+            <td class="day2">2022-05-16</td>
+            <td class="clickn">15</td>
+        </tr>
+        <tr>
+            <td class="numbering">2</td>
+            <td class="posting">게시글 2입니다.</td>
+            <td class="username">김준석</td>
+            <td class="day2">2022-05-16</td>
+            <td class="clickn">15</td>
+        </tr>
+        <tr>
+            <td class="numbering">3</td>
+            <td class="posting">게시글 3입니다.</td>
+            <td class="username">김준석</td>
+            <td class="day2">2022-05-16</td>
+            <td class="clickn">15</td>
+        </tr>
+        </table>
+        <br>
+        <table id="notBorderTop">
+            <td id="next">◀이전 1 다음▶</td>
+            <td id="list"><button type="button" id="a">목록</button></td>
+            <td id="posting2"><button type="button" id="b">글쓰기</button></td>
+        </table>
+    
+</body> 
+</html>
+
+<from></from>
+<tbody></tbody>
+

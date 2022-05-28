@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>게시글 만들기</title>
+    <style>
+        
+        .posting  {width: 100%;}
+
+        .first, .second, .third, .fourth {
+            display: flex;
+        }
+        
+        .innerPosting {
+            width: 100%;
+            display: flex;
+            justify-content: right;
+        }
+
+        .first {
+            padding:20px;
+            border-top: 3px solid lightblue;
+            background-color: rgb(206, 239, 255);
+        }
+
+        .second {
+            padding: 3% 1%;
+            border-bottom: 2px solid rgb(201, 222, 231);
+
+        }
+        .third {
+            padding: 20px;
+            background-color: rgb(206, 239, 255);
+            justify-content: flex-end;
+        }
+
+        .fourth {
+            padding: 20px;
+            justify-content: flex-end;
+        }
+
+        .third div input, .fourth div input {
+            margin:3px;
+        }
+
+        .a {
+            border-radius: 3px;
+            padding: 2px 10px 2px 10px;
+            background-color: rgb(201, 244, 244);
+        }
+
+        #write1 {
+            border-radius: 3px;
+            padding: 30px 5px 30px 5px;
+            background-color: bisque;
+        }
+        #write2 {
+            border-radius: 3px;
+            padding: 2px 15px 2px 15px;
+            background-color: antiquewhite;
+        }
+
+        textarea {
+            border-radius: 3px;
+            width: 100%;
+            height: 100px;
+        }
+        
+        /* .innerPosting:first-child {margin:} */
+
+    </style>
+</head>
+<body>
+
+    <h3>게시판</h3>
+<div class="all">
+    <div class="first">
+        <div class="posting">게시글 1 입니다.</div>
+        <div class="innerPosting">
+            <div>김준석</div>
+            <div>조회 : 15</div>
+            <div>2022-05-16</div>
+            <div>(09:00)</div>
+        </div>
+    </div>
+    <div class="second">
+        게시판 3가지 만들기 끝났습니다!<br>
+        게시판 3가지 만들기 끝났습니다!<br>
+        게시판 3가지 만들기 끝났습니다!<br>
+        게시판 3가지 만들기 끝났습니다!<br>
+        게시판 3가지 만들기 끝났습니다!<br> 
+    </div>
+    <div class="third">
+        <div>
+            <textarea></textarea>
+        </div>
+        <div>
+            <input id="write1" type="button" value="덧글쓰기">
+        </div>
+    </div>
+    <div class="fourth">
+        <div>
+            <input class="a" type="button" value="삭제">
+        </div>
+        <div>
+            <input class="a" type="button" value="목록">
+        </div>
+        <div>
+            <input id="write2" type="button" value="글쓰기">
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+
+
+ 

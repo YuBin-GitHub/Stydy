@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>홈페이지 만들기</title>
+    <style>
+
+        * {margin: 0; padding: 0;}
+        body {font-family: sans-serif;}
+        li {list-style: none;}
+        a {text-decoration: none; color: white;}
+        img {border: 0;}
+
+        header {
+            margin: 0.7em;
+            padding: 0.5em;
+            display: grid;
+            grid-template-columns: 30% 70%;
+            /* grid-template-rows: ; */
+            background-color: rgb(251, 201, 210);
+            border: 3px solid black;
+        }
+
+        #blackpink1 {
+            margin: 0.5em;
+            width: 150px;
+        }
+        
+
+        nav {width: 100%;
+            align-self: center;
+            /* float: right; */
+            /* justify-content: flex-end; */
+            /* display: inline-flex; */
+            /* justify-content: flex-end; */
+        }
+       
+        /* ul {
+            
+        } */
+       
+        li {
+            display: inline;
+            margin: 0.3em;
+            padding: 0.3em;
+            text-align: center;
+            font-size: larger;
+            width: 90px;
+            background-color: rgb(250, 171, 184);
+            border-radius: 7px;
+            transition-duration: 0.5s;
+        }
+
+        li:hover {
+            text-align: center;
+            font-size: x-large;
+            width: 105px;
+            background: rgb(255, 222, 228);
+            color: white;
+        }
+
+        section {
+            border: 1px solid pink;
+            margin: 1em;
+            padding: 1em;
+            border: 2px solid rgb(42, 21, 29);
+            background-color: pink;
+        }
+       
+        main {
+            width: 100%;
+        }
+
+        article, video {
+        float: right; 
+        width:100%;
+        max-width: 900px;
+        background-color: rgb(255, 222, 227);
+        box-sizing: border-box;
+        box-shadow: 0px 8px 33px #999;
+        }
+        
+        h3 {border-top: 2px solid palevioletred;
+            border-bottom: 2px solid palevioletred;
+            background-color: rgb(255, 222, 227);
+        }
+
+        .video-container {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding-top: 56.25%;
+        }
+        
+        iframe {
+        z-index: 1;
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        }
+
+        
+        aside{
+            width: 25%;
+            border: 1px solid orange;
+        }
+
+        footer {
+            margin: 1em;
+            padding: 1em;
+            border: 2px solid purple;
+           }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div>
+        <img id="blackpink1" src="blackpink1.png">
+        </div>
+        <nav id="nav">
+            <ul id="ul">
+                <li><a href="#" target="new">메인메뉴</a></li>
+                <li><a href="#" target="new">게시판</a></li>
+                <li><a href="#" target="new">제니</a></li>
+                <li><a href="#" target="new">지수</a></li>
+                <li><a href="#" target="new">로제</a></li>
+                <li><a href="#" target="new">로제</a></li>
+                <li><a href="#" target="new">회원가입 및 로그인</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article id="article1">
+                <h3>블랙핑크 뮤직비디오</h3>
+                <div class="video">
+                    <div class="video-container">
+                        <iframe width="640" height="360" src="https://www.youtube.com/embed/IHNzOHi8sJs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <h3>게시판</h3>
+                <table>
+                    <caption>총 3개의 게시물이 있습니다.</caption>
+                    <tr>
+                    <td>번호</td>
+                    <td>제목</td>            
+                    <td>글쓴이</td>            
+                    <td>일시</td>            
+                    <td>조회수</td>            
+                    </tr>
+                </table>
+            </article>
+            <aside>
+                <h3>aside왼쪽기사꺼영역임</h3>
+                <p>여기다가 이제 문장이나 주간글 쭉 올릴거임ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ</p>
+            </aside>
+            <aside>
+                <h3>aside왼쪽기사꺼영역임</h3>
+                <p>여기다가 이제 문장이나 주간글 쭉 올릴거임ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ</p>
+            </aside>
+        </section>
+    </main>
+    <footer>
+        <span>footer태그</span>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

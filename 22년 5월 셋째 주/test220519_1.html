@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>글쓰기 만들기</title>
+    <style>
+
+    table, #b2, #b3 { width: 100%;}
+
+    #b1 {width: 10%}
+    #b3 {height: 200px;}
+
+    h3 {font-weight: bold; font-size: larger;}
+        
+    th {border-top: 2px solid darkgrey;
+        border-bottom: 1px solid darkgrey;
+        padding: 10px;
+        background-color: lightgrey;
+        font-weight: bold;
+        font-size: larger;}
+        
+    td {border-bottom: 1px solid lightgray;
+        border-left: 1px solid lightgray;
+        padding: 10px;}
+
+    span {padding: 10px 3px;
+        float: right;}
+
+    input:focus, textarea:focus {outline: 2px solid lightskyblue;}
+
+    th:first-child, td:first-child {border-left: none;}
+    
+    .a {text-align: center;}
+
+  
+    </style>
+</head>
+    <body>    
+        <div>
+        <h3>게시판</h3>
+            <table>
+                
+                    <tr>
+                        <th id="title">글쓰기</th>
+                    </tr>
+                
+            </table>
+        </div>
+<tfoot></tfoot>
+        <div>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="a">이름</td>
+                        <td class="a1"><input id="b1" type="text"></td>
+                    </tr>
+                    <tr>
+                        <td class="a">제목</td>
+                        <td class="a1"><input id="b2" type="text"></td>
+                    </tr>
+                    <tr>
+                        <td class="a">내용</td>
+                        <td class="a1">
+                            <textarea id="b3"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="a">파일업로드</td>
+                        <td class="a1"><input type="text"> <input type="file"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <br>
+        <div>
+            <span><button id="ll">목록</button></span>
+            <span><button id="cc">완료</button></span>
+        </div>
+    </body>
+</html>

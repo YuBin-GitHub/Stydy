@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>가입및글쓰기</title>
+    <style>
+         legend {color : red;}
+
+         fieldset {background : pink;}
+
+        .a {background-color: bisque;}
+        .b {background-color: bisque;}
+        .c {background-color: bisque;}
+
+    </style>
+</head>
+<body>
+
+    <h2>블로그 게시글 업로드</h2>
+    이름 : <input type="text" name="id"><br>
+    이메일 : <input type="text" name="mail"><br>
+    게시글 내용 : <textarea name="posting" cols="30" rows="5"></textarea><br>
+    <input type="submit"><br>
+                     
+    <h2>간편 회원 가입</h2>
+    <from>
+        <ol>
+            <li>
+        <fieldset>
+            <legend>입력 정보</legend>
+            <ol>
+                <li class="a">이름 <input type="text" name="id" value="이름"></li>
+                <li class="b">이메일 <input type="text" name="mail" value="example@example.kr"></li>
+                <li class="c">휴대폰 <input type="text" name="num" value="01000010002"></li>
+            </ol>
+        </fieldset>
+    </li>
+    <li>인증코드 <input type="text" name="code"></li>
+    </ol>
+    </from>
+
+    <h2>기본 회원 가입</h2>
+    <from>
+        <table border="0">
+            <tr>
+                <td>아이디</td>
+                <td><input type="text" name="userid"></td>
+            </tr>
+            <tr>
+                <td>비밀번호</td>
+                <td><input type="text" name="pass"></td>
+            </tr>
+            <tr>
+                <td>비밀번호확인</td>
+                <td><input type="text" name="pass"></td>
+            </tr>
+            <tr>
+                <td>이름</td>
+                <td><input type="text" name="username"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input id="gender_man" type="radio" name="gender">남성
+                    <input id="gender_woman" type="radio" name="gender">여성
+                    <input id="gender_" type="radio" name="gender">입력안함
+                </td>
+            </tr>
+            <tr>
+                <td>전화번호</td>
+                <td>
+                    <select>
+                        <option value="02">02</option>
+                        <option value="031">031</option>
+                        <option value="041">041</option>
+                        <option value="070">070</option>
+                        <option value="061">061</option>
+                        <option value="080">080</option>
+                    </select>
+                    - <input type="text" name="num">
+                    - <input type="text" name="num">
+                </td>
+            </tr>
+            <tr>
+                <td>이메일</td>
+                <td>
+                    <input type="text" name="mail"> @
+                    <select>
+                    <option value="">선택</option>
+                    <option value="naver.com">naver.com</option>
+                    <option value="nate.com">nate.com</option>
+                    <option value="gmail.com">gmail.com</option>
+                    <option value="daum.net">daum.net</option>
+                    <option value="hanmail.net">hanmail.net</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>소개내용</td>
+                <td><textarea name="writing" cols="30" rows="5"></textarea></td>
+            </tr>
+        </table>
+    </from>
+
+</body>
+</html>
