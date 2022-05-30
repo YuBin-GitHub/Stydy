@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var kor=100;
+        // console.log(kor);
+        // kor +="a";
+        // console.log(kor);
+        // kor +="b";
+        // console.log(kor);
+
+        // 논리연산자-------------------------
+
+        var x=5;
+        var y=7;
+        var result;
+        result=(x<10 && y>10);
+        document.write("(x<10 && y>10 : " + result + "<br/>");
+        result=(x<10 || y>10);
+        document.write("(x<10 || y>10 : " + result + "<br/>");
+        rsult=!(x<10 && y>10);
+            document.write("!(x<10 && y>10 : " + result + "<br/>");
+
+        // 비트 논리연산자-------------------------------------
+        
+        var a = 5;
+        var b = 7;
+        var result;
+        result=(a & b);
+        document.write("a & b = " + result + "<br/>");
+        result=(a | b);
+        document.write("a | b =" + result+ "<br/>");
+        result=(a ^ b);
+        document.write("a ^ b = " + result + "<br/>");
+        result=(~a);
+        document.write("~a = " + result + "<br/>");
+
+        // if~else문-------------------------------------
+
+        var gender="M";
+        var age=21;
+        if(gender == "M") {
+            if(age>=19) {
+                result="남자 성인입니다.";
+            }
+            else {
+                result="남자 미성년자입니다.";
+            }
+        }
+        else {
+            if(age>=19) {
+                result="여자 성인입니다";
+            }
+            else {
+                result="여자 미성년자입니다.";
+            }
+        }
+        document.write("당신은 "  + result + "<br/>");        
+    </script>
+</body>
+</html>
